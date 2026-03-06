@@ -16,11 +16,10 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-zinc-950/90 backdrop-blur-md border-b border-zinc-800 py-4"
           : "bg-transparent py-6"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
@@ -37,10 +36,16 @@ export function Navbar() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           <a
+            href="#about"
+            className="text-sm font-mono text-zinc-400 hover:text-white uppercase tracking-wider transition-colors"
+          >
+            Our Story
+          </a>
+          <a
             href="#services"
             className="text-sm font-mono text-zinc-400 hover:text-white uppercase tracking-wider transition-colors"
           >
-            Services
+            Capabilities
           </a>
           <a
             href="#portfolio"
@@ -77,11 +82,18 @@ export function Navbar() {
           className="absolute top-full left-0 right-0 bg-zinc-950 border-b border-zinc-800 p-6 flex flex-col gap-6 md:hidden shadow-2xl"
         >
           <a
+            href="#about"
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-lg font-bold text-zinc-400 hover:text-white uppercase tracking-wider"
+          >
+            Our Story
+          </a>
+          <a
             href="#services"
             onClick={() => setMobileMenuOpen(false)}
             className="text-lg font-bold text-zinc-400 hover:text-white uppercase tracking-wider"
           >
-            Services
+            Capabilities
           </a>
           <a
             href="#portfolio"
