@@ -31,7 +31,6 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="film-grain" />
       <div className="min-h-screen bg-zinc-950 text-white selection:bg-blue-500 selection:text-black">
         <Navbar />
         <main>
