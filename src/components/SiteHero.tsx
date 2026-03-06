@@ -30,7 +30,7 @@ export function SiteHero() {
             </span>
           </div>
 
-          <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-black tracking-tighter uppercase leading-[0.85] mb-8">
+          <h1 className="text-[3.5rem] leading-[0.9] sm:text-6xl md:text-8xl lg:text-[7rem] font-black tracking-tighter uppercase mb-8">
             <span className="block text-zinc-500">Alexandria's</span>
             <span className="block text-zinc-300">Full Service</span>
             <span className="block text-blue-500 mt-2">Sign</span>
@@ -38,7 +38,7 @@ export function SiteHero() {
           </h1>
 
           <p className="text-lg md:text-xl text-zinc-400 font-medium mb-10 max-w-xl border-l-2 border-blue-500 pl-6">
-            From LED signs to small cabinet signs, we have you covered. Design, 
+            From LED signs to small cabinet signs, we have you covered. Design,
             Installation, and Repair. We make you unmissable.
           </p>
 
