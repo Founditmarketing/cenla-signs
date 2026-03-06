@@ -25,7 +25,7 @@ export function Hero() {
         className="relative z-10 max-w-5xl mx-auto text-center"
       >
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full brutalist-border bg-zinc-900/50 backdrop-blur-sm mb-8">
-          <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
           <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">
             Design Vision & Implementation Roadmap
           </span>
@@ -34,7 +34,7 @@ export function Hero() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-[0.9] mb-6">
           <span className="block text-zinc-500">Project:</span>
           <span className="block text-white">Cenla Signs</span>
-          <span className="block text-orange-500">Redesign</span>
+          <span className="block text-blue-500">Redesign</span>
         </h1>
 
         <p className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-400 font-medium mb-12">
@@ -49,7 +49,7 @@ export function Hero() {
         >
           <a
             href="#vision"
-            className="inline-flex items-center justify-center w-14 h-14 rounded-full brutalist-border hover:brutalist-border-orange hover:text-orange-500 transition-colors duration-300"
+            className="inline-flex items-center justify-center w-14 h-14 rounded-full brutalist-border hover:brutalist-border-blue hover:text-blue-500 transition-colors duration-300"
           >
             <ChevronDown className="w-6 h-6 animate-bounce" />
           </a>

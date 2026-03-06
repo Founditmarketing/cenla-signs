@@ -12,7 +12,7 @@ import { SiteFooter } from "./components/SiteFooter";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-zinc-950 text-white selection:bg-orange-500 selection:text-black">
+    <div className="min-h-screen bg-zinc-950 text-white selection:bg-blue-500 selection:text-black">
       <Navbar />
       <SiteHero />
       <Services />

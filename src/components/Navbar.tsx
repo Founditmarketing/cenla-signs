@@ -24,13 +24,13 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-orange-500 flex items-center justify-center rounded-sm transform -skew-x-12">
+          <div className="w-8 h-8 bg-blue-500 flex items-center justify-center rounded-sm transform -skew-x-12">
             <Zap className="w-5 h-5 text-black" fill="currentColor" />
           </div>
           <div className="font-black text-2xl tracking-tighter uppercase leading-none">
             Cenla
             <br />
-            <span className="text-orange-500">Signs</span>
+            <span className="text-blue-500">Signs</span>
           </div>
         </div>
 
@@ -50,7 +50,7 @@ export function Navbar() {
           </a>
           <a
             href="#quote"
-            className="px-6 py-3 bg-orange-500 text-black font-bold uppercase tracking-wider rounded-sm hover:bg-orange-600 transition-colors transform -skew-x-6"
+            className="px-6 py-3 bg-blue-500 text-black font-bold uppercase tracking-wider rounded-sm hover:bg-blue-600 transition-colors transform -skew-x-6"
           >
             <span className="block transform skew-x-6">Instant Quote</span>
           </a>
@@ -93,7 +93,7 @@ export function Navbar() {
           <a
             href="#quote"
             onClick={() => setMobileMenuOpen(false)}
-            className="w-full py-4 bg-orange-500 text-black text-center font-bold uppercase tracking-wider rounded-sm"
+            className="w-full py-4 bg-blue-500 text-black text-center font-bold uppercase tracking-wider rounded-sm"
           >
             Instant Quote
           </a>

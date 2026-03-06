@@ -17,7 +17,7 @@ export function TechnicalEdge() {
         {/* Micro-interactions */}
         <div className="order-2 lg:order-1">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full brutalist-border bg-zinc-900/50 mb-6">
-            <Zap className="w-4 h-4 text-orange-500" />
+            <Zap className="w-4 h-4 text-blue-500" />
             <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">
               Modern Micro-Interactions
             </span>
@@ -33,7 +33,7 @@ export function TechnicalEdge() {
           <ul className="space-y-8">
             <li className="flex gap-4">
               <div className="w-12 h-12 rounded-full brutalist-border flex items-center justify-center shrink-0 bg-zinc-900">
-                <MousePointerClick className="w-5 h-5 text-orange-500" />
+                <MousePointerClick className="w-5 h-5 text-blue-500" />
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-2">
@@ -48,7 +48,7 @@ export function TechnicalEdge() {
             </li>
             <li className="flex gap-4">
               <div className="w-12 h-12 rounded-full brutalist-border flex items-center justify-center shrink-0 bg-zinc-900">
-                <Maximize className="w-5 h-5 text-orange-500" />
+                <Maximize className="w-5 h-5 text-blue-500" />
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-2">
@@ -63,7 +63,7 @@ export function TechnicalEdge() {
             </li>
             <li className="flex gap-4">
               <div className="w-12 h-12 rounded-full brutalist-border flex items-center justify-center shrink-0 bg-zinc-900">
-                <Zap className="w-5 h-5 text-orange-500" />
+                <Zap className="w-5 h-5 text-blue-500" />
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-2">
@@ -82,11 +82,11 @@ export function TechnicalEdge() {
         {/* Mobile-First Constraint */}
         <div className="order-1 lg:order-2 bg-zinc-900 brutalist-border rounded-2xl p-8 relative overflow-hidden flex flex-col items-center justify-center min-h-[500px]">
           <div className="absolute inset-0 tech-grid opacity-20" />
-          <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl" />
 
           <div className="relative z-10 text-center mb-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full brutalist-border bg-zinc-950 mb-6">
-              <Smartphone className="w-4 h-4 text-orange-500" />
+              <Smartphone className="w-4 h-4 text-blue-500" />
               <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">
                 Constraint
               </span>
@@ -99,7 +99,7 @@ export function TechnicalEdge() {
           </div>
 
           {/* Mock Mobile Device */}
-          <div className="relative z-10 w-64 h-96 bg-zinc-950 rounded-[2rem] brutalist-border-orange p-2 shadow-2xl shadow-orange-500/20">
+          <div className="relative z-10 w-64 h-96 bg-zinc-950 rounded-[2rem] brutalist-border-blue p-2 shadow-2xl shadow-blue-500/20">
             <div className="w-full h-full rounded-[1.5rem] overflow-hidden relative bg-zinc-900">
               {/* Status Bar */}
               <div className="h-6 bg-zinc-950 flex justify-center items-center">
@@ -109,12 +109,12 @@ export function TechnicalEdge() {
               <div className="p-4">
                 <div className="w-24 h-4 bg-zinc-800 rounded mb-6" />
                 <div className="w-full h-32 bg-zinc-800 rounded-xl mb-4 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-transparent" />
                   <div className="absolute bottom-2 left-2 w-1/2 h-4 bg-zinc-950 rounded" />
                 </div>
                 <div className="w-3/4 h-6 bg-zinc-800 rounded mb-2" />
                 <div className="w-1/2 h-4 bg-zinc-800 rounded mb-6" />
-                <div className="w-full h-12 bg-orange-500 rounded-xl flex items-center justify-center">
+                <div className="w-full h-12 bg-blue-500 rounded-xl flex items-center justify-center">
                   <div className="w-24 h-4 bg-zinc-950 rounded" />
                 </div>
               </div>

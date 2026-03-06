@@ -25,7 +25,7 @@ export function UXUIOverhaul() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full brutalist-border bg-zinc-900/50 mb-6">
-              <Play className="w-4 h-4 text-orange-500" />
+              <Play className="w-4 h-4 text-blue-500" />
               <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">
                 Hero 2.0 Concept
               </span>
@@ -40,27 +40,27 @@ export function UXUIOverhaul() {
               immediate authority.
             </p>
             <div className="brutalist-border p-8 bg-zinc-900/30 rounded-2xl relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-transparent pointer-events-none" />
-              <div className="text-xs font-mono text-orange-500 mb-4 uppercase tracking-widest">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-transparent pointer-events-none" />
+              <div className="text-xs font-mono text-blue-500 mb-4 uppercase tracking-widest">
                 Power Statement Headline
               </div>
               <h4 className="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-tight">
                 We Don't Just Make Signs.
                 <br />
-                <span className="text-orange-500">We Make You Unmissable.</span>
+                <span className="text-blue-500">We Make You Unmissable.</span>
               </h4>
             </div>
           </div>
           <div className="order-1 lg:order-2 aspect-video bg-zinc-900 brutalist-border rounded-2xl relative overflow-hidden group flex items-center justify-center">
             <div className="absolute inset-0 tech-grid opacity-20" />
             <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 to-transparent" />
-            <Play className="w-20 h-20 text-zinc-700 group-hover:text-orange-500 transition-colors duration-500 relative z-10" />
+            <Play className="w-20 h-20 text-zinc-700 group-hover:text-blue-500 transition-colors duration-500 relative z-10" />
             <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end z-10">
               <div className="text-xs font-mono text-zinc-500 uppercase">
                 B-Roll: Welding & Wrapping
               </div>
               <div className="w-1/3 h-1 bg-zinc-800 rounded-full overflow-hidden">
-                <div className="h-full bg-orange-500 w-1/2 animate-pulse" />
+                <div className="h-full bg-blue-500 w-1/2 animate-pulse" />
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ export function UXUIOverhaul() {
                 (tag, i) => (
                   <div
                     key={tag}
-                    className={`px-4 py-2 rounded-full text-xs font-mono uppercase whitespace-nowrap ${i === 1 ? "bg-orange-500 text-black font-bold" : "brutalist-border text-zinc-400"}`}
+                    className={`px-4 py-2 rounded-full text-xs font-mono uppercase whitespace-nowrap ${i === 1 ? "bg-blue-500 text-black font-bold" : "brutalist-border text-zinc-400"}`}
                   >
                     {tag}
                   </div>
@@ -88,7 +88,7 @@ export function UXUIOverhaul() {
                   <div className="text-white font-bold">
                     Neon Channel Letters
                   </div>
-                  <div className="text-xs font-mono text-orange-500">
+                  <div className="text-xs font-mono text-blue-500">
                     View Specs <ArrowRight className="inline w-3 h-3" />
                   </div>
                 </div>
@@ -97,7 +97,7 @@ export function UXUIOverhaul() {
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-2 group-hover:translate-y-0">
                   <div className="text-white font-bold">LED Monument</div>
-                  <div className="text-xs font-mono text-orange-500">
+                  <div className="text-xs font-mono text-blue-500">
                     View Specs <ArrowRight className="inline w-3 h-3" />
                   </div>
                 </div>
@@ -106,7 +106,7 @@ export function UXUIOverhaul() {
           </div>
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full brutalist-border bg-zinc-900/50 mb-6">
-              <Filter className="w-4 h-4 text-orange-500" />
+              <Filter className="w-4 h-4 text-blue-500" />
               <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">
                 Portfolio Concept
               </span>
@@ -122,7 +122,7 @@ export function UXUIOverhaul() {
             <ul className="space-y-6">
               <li className="flex gap-4">
                 <div className="w-12 h-12 rounded-full brutalist-border flex items-center justify-center shrink-0 bg-zinc-900">
-                  <Layers className="w-5 h-5 text-orange-500" />
+                  <Layers className="w-5 h-5 text-blue-500" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold mb-2">Category Filtering</h4>
@@ -134,7 +134,7 @@ export function UXUIOverhaul() {
               </li>
               <li className="flex gap-4">
                 <div className="w-12 h-12 rounded-full brutalist-border flex items-center justify-center shrink-0 bg-zinc-900">
-                  <MousePointerClick className="w-5 h-5 text-orange-500" />
+                  <MousePointerClick className="w-5 h-5 text-blue-500" />
                 </div>
                 <div>
                   <h4 className="text-xl font-bold mb-2">Technical Overlays</h4>
@@ -152,7 +152,7 @@ export function UXUIOverhaul() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full brutalist-border bg-zinc-900/50 mb-6">
-              <Zap className="w-4 h-4 text-orange-500" />
+              <Zap className="w-4 h-4 text-blue-500" />
               <span className="text-xs font-mono text-zinc-400 uppercase tracking-wider">
                 Lead-Gen Concept
               </span>
@@ -199,14 +199,14 @@ export function UXUIOverhaul() {
             </div>
           </div>
           <div className="order-1 lg:order-2 bg-zinc-900 brutalist-border rounded-2xl p-8 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl" />
+            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl" />
 
             <div className="flex justify-between items-center mb-8 pb-4 border-b border-zinc-800">
               <div className="font-mono text-sm text-zinc-400 uppercase tracking-widest">
                 Project Configurator
               </div>
               <div className="flex gap-1">
-                <div className="w-8 h-1 bg-orange-500 rounded-full" />
+                <div className="w-8 h-1 bg-blue-500 rounded-full" />
                 <div className="w-8 h-1 bg-zinc-800 rounded-full" />
                 <div className="w-8 h-1 bg-zinc-800 rounded-full" />
               </div>
@@ -215,9 +215,9 @@ export function UXUIOverhaul() {
             <h4 className="text-2xl font-bold mb-6">What are we building?</h4>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
-              <div className="brutalist-border-orange bg-orange-500/10 p-4 rounded-xl text-center cursor-pointer">
-                <div className="w-12 h-12 mx-auto bg-orange-500/20 rounded-full mb-3 flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-orange-500" />
+              <div className="brutalist-border-blue bg-blue-500/10 p-4 rounded-xl text-center cursor-pointer">
+                <div className="w-12 h-12 mx-auto bg-blue-500/20 rounded-full mb-3 flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-blue-500" />
                 </div>
                 <div className="font-bold">LED / Illuminated</div>
               </div>
@@ -229,7 +229,7 @@ export function UXUIOverhaul() {
               </div>
             </div>
 
-            <button className="w-full py-4 bg-orange-500 text-black font-bold uppercase tracking-wider rounded-xl hover:bg-orange-600 transition-colors flex items-center justify-center gap-2">
+            <button className="w-full py-4 bg-blue-500 text-black font-bold uppercase tracking-wider rounded-xl hover:bg-blue-600 transition-colors flex items-center justify-center gap-2">
               Continue to Step 02 <ArrowRight className="w-5 h-5" />
             </button>
           </div>

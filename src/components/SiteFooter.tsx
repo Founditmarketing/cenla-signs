@@ -18,13 +18,13 @@ export function SiteFooter() {
           {/* Brand Col */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-8">
-              <div className="w-8 h-8 bg-orange-500 flex items-center justify-center rounded-sm transform -skew-x-12">
+              <div className="w-8 h-8 bg-blue-500 flex items-center justify-center rounded-sm transform -skew-x-12">
                 <Zap className="w-5 h-5 text-black" fill="currentColor" />
               </div>
               <div className="font-black text-2xl tracking-tighter uppercase leading-none">
                 Cenla
                 <br />
-                <span className="text-orange-500">Signs</span>
+                <span className="text-blue-500">Signs</span>
               </div>
             </div>
 
@@ -42,19 +42,19 @@ export function SiteFooter() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 rounded-full brutalist-border flex items-center justify-center text-zinc-400 hover:text-orange-500 hover:border-orange-500 transition-colors"
+                className="w-10 h-10 rounded-full brutalist-border flex items-center justify-center text-zinc-400 hover:text-blue-500 hover:border-blue-500 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full brutalist-border flex items-center justify-center text-zinc-400 hover:text-orange-500 hover:border-orange-500 transition-colors"
+                className="w-10 h-10 rounded-full brutalist-border flex items-center justify-center text-zinc-400 hover:text-blue-500 hover:border-blue-500 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full brutalist-border flex items-center justify-center text-zinc-400 hover:text-orange-500 hover:border-orange-500 transition-colors"
+                className="w-10 h-10 rounded-full brutalist-border flex items-center justify-center text-zinc-400 hover:text-blue-500 hover:border-blue-500 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -63,7 +63,7 @@ export function SiteFooter() {
 
           {/* Contact Col */}
           <div>
-            <h4 className="text-xs font-mono text-orange-500 uppercase tracking-widest mb-6">
+            <h4 className="text-xs font-mono text-blue-500 uppercase tracking-widest mb-6">
               Contact Studio
             </h4>
             <ul className="space-y-6">
@@ -74,7 +74,7 @@ export function SiteFooter() {
                     Fabrication HQ
                   </strong>
                   <span className="text-sm text-zinc-400">
-                    123 Industrial Blvd
+                    3219 Masonic Dr
                     <br />
                     Alexandria, LA 71301
                   </span>
@@ -83,19 +83,19 @@ export function SiteFooter() {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-zinc-500 shrink-0" />
                 <a
-                  href="tel:+13185550199"
+                  href="tel:+13184484888"
                   className="text-sm text-zinc-400 hover:text-white transition-colors"
                 >
-                  (318) 555-0199
+                  (318) 448-4888
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-zinc-500 shrink-0" />
                 <a
-                  href="mailto:hello@cenlasigns.la"
+                  href="mailto:orders@cenlasigns.la"
                   className="text-sm text-zinc-400 hover:text-white transition-colors"
                 >
-                  hello@cenlasigns.la
+                  orders@cenlasigns.la
                 </a>
               </li>
             </ul>
@@ -103,7 +103,7 @@ export function SiteFooter() {
 
           {/* Quick Links Col */}
           <div>
-            <h4 className="text-xs font-mono text-orange-500 uppercase tracking-widest mb-6">
+            <h4 className="text-xs font-mono text-blue-500 uppercase tracking-widest mb-6">
               Capabilities
             </h4>
             <ul className="space-y-4">

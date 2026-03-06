@@ -3,46 +3,46 @@ import { Layers, Zap, PenTool, ArrowRight } from "lucide-react";
 
 const services = [
   {
-    icon: <Layers className="w-8 h-8 text-orange-500" />,
+    icon: <Layers className="w-8 h-8 text-blue-500" />,
     title: "Vehicle Wraps",
     subtitle: "Mobile Billboards. Maximum ROI.",
-    desc: "Turn your fleet into a 24/7 marketing machine. We use premium 3M and Avery Dennison materials for flawless, high-impact wraps that command attention on every street.",
+    desc: "Turn your fleet into a 24/7 marketing machine. Professional design and installation for business advertising on the road.",
     specs: [
-      "3M/Avery Vinyl",
+      "Custom Designs",
       "Full/Partial Wraps",
       "Fleet Graphics",
-      "5-Year Warranty",
+      "Expert Installation",
     ],
     image:
-      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1964&auto=format&fit=crop",
+      "https://www.cenlasigns.la/wp-content/uploads/2023/10/image1-1-scaled.jpeg",
   },
   {
-    icon: <Zap className="w-8 h-8 text-orange-500" />,
-    title: "LED & Illuminated",
-    subtitle: "Own the Night.",
-    desc: "From neon channel letters to towering LED monuments, our illuminated signage ensures your brand never sleeps. Engineered for maximum lumen output and weather resistance.",
+    icon: <Zap className="w-8 h-8 text-blue-500" />,
+    title: "Custom Signs",
+    subtitle: "LED, Illuminated & More.",
+    desc: "From neon channel letters to towering LED monuments and wayfinding systems, our signage ensures your brand is unmissable.",
     specs: [
-      "Channel Letters",
-      "Pylon Signs",
-      "Neon Fabrication",
-      "Energy Efficient",
+      "Illuminated Signs",
+      "Cabinet Signs",
+      "Dimensional Letters",
+      "Maintenance & Repair",
     ],
     image:
-      "https://images.unsplash.com/photo-1563298723-dcfebaa392e3?q=80&w=2067&auto=format&fit=crop",
+      "https://www.cenlasigns.la/wp-content/uploads/2021/03/104421186_1656654467806511_4279474051734214336_o.jpg",
   },
   {
-    icon: <PenTool className="w-8 h-8 text-orange-500" />,
-    title: "Custom Fabrication",
-    subtitle: "Precision Metal & Acrylic.",
-    desc: "Architectural signage, wayfinding systems, and bespoke installations. If you can dream it, our fabrication studio can build it with industrial-grade precision.",
+    icon: <PenTool className="w-8 h-8 text-blue-500" />,
+    title: "Promo & Print",
+    subtitle: "Complete Brand Cohesion.",
+    desc: "Extend your brand identity beyond signage. We offer full-suite screen printing, custom logos on promotional items, and business cards.",
     specs: [
-      "CNC Routing",
-      "Metal Welding",
-      "Acrylic Forming",
-      "Wayfinding Systems",
+      "Screen Printing",
+      "Business Cards",
+      "Promo Items",
+      "Custom Apparel",
     ],
     image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=2070&auto=format&fit=crop",
+      "https://www.cenlasigns.la/wp-content/uploads/2025/06/cenla_signs_about_us-scaled.jpg",
   },
 ];
 
@@ -56,7 +56,7 @@ export function Services() {
         <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-sm brutalist-border bg-zinc-900/50 mb-6 transform -skew-x-6">
-              <span className="text-xs font-mono text-orange-500 uppercase tracking-widest transform skew-x-6">
+              <span className="text-xs font-mono text-blue-500 uppercase tracking-widest transform skew-x-6">
                 Core Capabilities
               </span>
             </div>
@@ -65,7 +65,7 @@ export function Services() {
               <span className="block text-white">Fabrication.</span>
             </h2>
           </div>
-          <p className="text-xl text-zinc-400 max-w-md font-medium border-l-2 border-orange-500 pl-6">
+          <p className="text-xl text-zinc-400 max-w-md font-medium border-l-2 border-blue-500 pl-6">
             We don't outsource. Every project is engineered, fabricated, and
             installed by our in-house experts in Central Louisiana.
           </p>
@@ -97,7 +97,7 @@ export function Services() {
                 <h3 className="text-3xl font-black uppercase tracking-tighter mb-2">
                   {service.title}
                 </h3>
-                <h4 className="text-orange-500 font-bold mb-6">
+                <h4 className="text-blue-500 font-bold mb-6">
                   {service.subtitle}
                 </h4>
                 <p className="text-zinc-400 mb-8 flex-1 leading-relaxed">
@@ -108,7 +108,7 @@ export function Services() {
                 <div className="grid grid-cols-2 gap-y-4 gap-x-2 mb-8 pt-6 border-t border-zinc-800">
                   {service.specs.map((spec, i) => (
                     <div key={i} className="flex items-center gap-2">
-                      <div className="w-1 h-1 bg-orange-500 rounded-full" />
+                      <div className="w-1 h-1 bg-blue-500 rounded-full" />
                       <span className="text-xs font-mono text-zinc-300 uppercase tracking-wider">
                         {spec}
                       </span>
@@ -118,7 +118,7 @@ export function Services() {
 
                 <a
                   href="#quote"
-                  className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-white group-hover:text-orange-500 transition-colors"
+                  className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-white group-hover:text-blue-500 transition-colors"
                 >
                   Request Specs{" "}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

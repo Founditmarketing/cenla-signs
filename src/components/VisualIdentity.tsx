@@ -7,7 +7,7 @@ export function VisualIdentity() {
       <div className="mb-16">
         <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">
           1. The "Signature Brand"{" "}
-          <span className="text-orange-500">Visual Identity</span>
+          <span className="text-blue-500">Visual Identity</span>
         </h2>
         <p className="text-xl text-zinc-400 max-w-3xl font-medium">
           Moving from a "mom-and-pop" aesthetic to a high-end custom fabrication
@@ -25,7 +25,7 @@ export function VisualIdentity() {
             <Palette className="w-24 h-24" />
           </div>
           <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-            <div className="w-2 h-8 bg-orange-500 rounded-sm" />
+            <div className="w-2 h-8 bg-blue-500 rounded-sm" />
             Palette
           </h3>
           <p className="text-zinc-400 mb-8 font-medium">
@@ -50,7 +50,7 @@ export function VisualIdentity() {
             <div className="flex items-center gap-4">
               <div className="w-16 h-16 rounded-lg bg-[#FF5A00] brutalist-border shadow-inner" />
               <div>
-                <div className="font-bold text-orange-500">Safety Orange</div>
+                <div className="font-bold text-blue-500">Safety blue</div>
                 <div className="text-xs font-mono text-zinc-500">#FF5A00</div>
               </div>
             </div>
@@ -66,7 +66,7 @@ export function VisualIdentity() {
             <Type className="w-24 h-24" />
           </div>
           <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-            <div className="w-2 h-8 bg-orange-500 rounded-sm" />
+            <div className="w-2 h-8 bg-blue-500 rounded-sm" />
             Typography
           </h3>
           <p className="text-zinc-400 mb-8 font-medium">
@@ -110,7 +110,7 @@ export function VisualIdentity() {
             <ImageIcon className="w-24 h-24" />
           </div>
           <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-            <div className="w-2 h-8 bg-orange-500 rounded-sm" />
+            <div className="w-2 h-8 bg-blue-500 rounded-sm" />
             Atmosphere
           </h3>
           <p className="text-zinc-400 mb-8 font-medium">
@@ -119,7 +119,7 @@ export function VisualIdentity() {
 
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
-              <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 shrink-0" />
+              <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 shrink-0" />
               <div>
                 <strong className="block text-white">Dark Mode Default</strong>
                 <span className="text-sm text-zinc-400">
@@ -129,7 +129,7 @@ export function VisualIdentity() {
               </div>
             </li>
             <li className="flex items-start gap-3">
-              <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 shrink-0" />
+              <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 shrink-0" />
               <div>
                 <strong className="block text-white">
                   High-Contrast Photography
@@ -141,7 +141,7 @@ export function VisualIdentity() {
               </div>
             </li>
             <li className="flex items-start gap-3">
-              <div className="w-1.5 h-1.5 rounded-full bg-orange-500 mt-2 shrink-0" />
+              <div className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2 shrink-0" />
               <div>
                 <strong className="block text-white">Brutalist Layouts</strong>
                 <span className="text-sm text-zinc-400">

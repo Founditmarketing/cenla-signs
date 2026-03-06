@@ -19,7 +19,7 @@ export function QuoteEngine() {
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-sm brutalist-border bg-zinc-900/50 mb-6 transform -skew-x-6">
-            <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
             <span className="text-xs font-mono text-zinc-300 uppercase tracking-widest transform skew-x-6">
               Instant Quote Engine
             </span>
@@ -36,7 +36,7 @@ export function QuoteEngine() {
 
         {/* Configurator Container */}
         <div className="bg-zinc-900 brutalist-border rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/5 rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl" />
 
           {/* Progress Bar */}
           <div className="flex justify-between items-center mb-12 pb-6 border-b border-zinc-800">
@@ -47,13 +47,12 @@ export function QuoteEngine() {
               {[1, 2, 3].map((i) => (
                 <div
                   key={i}
-                  className={`w-12 h-1 rounded-full transition-colors duration-300 ${
-                    i === step
-                      ? "bg-orange-500"
+                  className={`w-12 h-1 rounded-full transition-colors duration-300 ${i === step
+                      ? "bg-blue-500"
                       : i < step
                         ? "bg-zinc-600"
                         : "bg-zinc-800"
-                  }`}
+                    }`}
                 />
               ))}
             </div>
@@ -94,11 +93,10 @@ export function QuoteEngine() {
                       <button
                         key={type.id}
                         onClick={() => setProjectType(type.id)}
-                        className={`p-6 rounded-xl text-center transition-all border ${
-                          projectType === type.id
-                            ? "bg-orange-500/10 border-orange-500 text-orange-500"
+                        className={`p-6 rounded-xl text-center transition-all border ${projectType === type.id
+                            ? "bg-blue-500/10 border-blue-500 text-blue-500"
                             : "bg-zinc-950 border-zinc-800 text-zinc-400 hover:border-zinc-600 hover:text-white"
-                        }`}
+                          }`}
                       >
                         <div className="flex justify-center mb-4">
                           {type.icon}
@@ -124,8 +122,8 @@ export function QuoteEngine() {
                     Upload Specs & Details
                   </h3>
 
-                  <div className="border-2 border-dashed border-zinc-700 rounded-xl p-12 text-center hover:border-orange-500 hover:bg-orange-500/5 transition-colors cursor-pointer group">
-                    <UploadCloud className="w-12 h-12 text-zinc-500 mx-auto mb-4 group-hover:text-orange-500 transition-colors" />
+                  <div className="border-2 border-dashed border-zinc-700 rounded-xl p-12 text-center hover:border-blue-500 hover:bg-blue-500/5 transition-colors cursor-pointer group">
+                    <UploadCloud className="w-12 h-12 text-zinc-500 mx-auto mb-4 group-hover:text-blue-500 transition-colors" />
                     <div className="font-bold text-lg mb-2">
                       Drag & Drop Files Here
                     </div>
@@ -139,7 +137,7 @@ export function QuoteEngine() {
                       Project Notes
                     </label>
                     <textarea
-                      className="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all min-h-[120px]"
+                      className="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all min-h-[120px]"
                       placeholder="Tell us about dimensions, timeline, or specific materials..."
                     />
                   </div>
@@ -165,7 +163,7 @@ export function QuoteEngine() {
                       </label>
                       <input
                         type="text"
-                        className="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all"
+                        className="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"
                         placeholder="John Doe"
                       />
                     </div>
@@ -175,7 +173,7 @@ export function QuoteEngine() {
                       </label>
                       <input
                         type="text"
-                        className="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all"
+                        className="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"
                         placeholder="Acme Corp"
                       />
                     </div>
@@ -185,8 +183,8 @@ export function QuoteEngine() {
                       </label>
                       <input
                         type="email"
-                        className="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-white focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none transition-all"
-                        placeholder="john@example.com"
+                        className="w-full bg-zinc-950 border border-zinc-800 rounded-xl p-4 text-white focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-all"
+                        placeholder="name@company.com"
                       />
                     </div>
                   </div>
@@ -215,11 +213,10 @@ export function QuoteEngine() {
                   : handleNext
               }
               disabled={step === 1 && !projectType}
-              className={`inline-flex items-center justify-center gap-3 px-8 py-4 font-bold uppercase tracking-widest rounded-sm transition-colors transform -skew-x-6 group ${
-                step === 1 && !projectType
+              className={`inline-flex items-center justify-center gap-3 px-8 py-4 font-bold uppercase tracking-widest rounded-sm transition-colors transform -skew-x-6 group ${step === 1 && !projectType
                   ? "bg-zinc-800 text-zinc-500 cursor-not-allowed"
-                  : "bg-orange-500 text-black hover:bg-orange-600"
-              }`}
+                  : "bg-blue-500 text-black hover:bg-blue-600"
+                }`}
             >
               <span className="transform skew-x-6 flex items-center gap-2">
                 {step === 3 ? "Submit Request" : "Continue"}{" "}
