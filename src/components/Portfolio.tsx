@@ -55,6 +55,26 @@ const projects = [
   },
 ];
 
+const portfolioHeaderVariants = {
+  hidden: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const portfolioItemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  },
+};
+
 export function Portfolio() {
   const [activeCategory, setActiveCategory] = useState("All");
 
@@ -69,8 +89,14 @@ export function Portfolio() {
       className="py-32 px-6 md:px-12 bg-zinc-950 relative border-t border-zinc-800"
     >
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
-          <div>
+        <motion.div
+          className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8"
+          variants={portfolioHeaderVariants}
+          initial="hidden"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+        >
+          <motion.div variants={portfolioItemVariants}>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-sm brutalist-border bg-zinc-900/50 mb-6 transform -skew-x-6">
               <span className="text-xs font-mono text-blue-500 uppercase tracking-widest transform skew-x-6">
                 Case Studies
@@ -80,10 +106,10 @@ export function Portfolio() {
               <span className="block text-zinc-500">Proof of</span>
               <span className="block text-white">Work.</span>
             </h2>
-          </div>
+          </motion.div>
 
           {/* Category Filter */}
-          <div className="flex flex-wrap gap-3">
+          <motion.div variants={portfolioItemVariants} className="flex flex-wrap gap-3">
             <div className="flex items-center gap-2 mr-4 text-zinc-500">
               <Filter className="w-4 h-4" />
               <span className="text-xs font-mono uppercase tracking-widest">
@@ -102,8 +128,8 @@ export function Portfolio() {
                 <span className="block transform skew-x-6">{cat}</span>
               </button>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Gallery Grid */}
         <motion.div

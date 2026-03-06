@@ -46,6 +46,29 @@ const services = [
   },
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 40 },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
 export function Services() {
   return (
     <section
@@ -53,7 +76,13 @@ export function Services() {
       className="py-32 px-6 md:px-12 bg-zinc-950 relative border-t border-zinc-800"
     >
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8">
+        <motion.div
+          className="mb-20 flex flex-col md:flex-row md:items-end justify-between gap-8"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        >
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-sm brutalist-border bg-zinc-900/50 mb-6 transform -skew-x-6">
               <span className="text-xs font-mono text-blue-500 uppercase tracking-widest transform skew-x-6">
@@ -69,13 +98,20 @@ export function Services() {
             We don't outsource. Every project is engineered, fabricated, and
             installed by our in-house experts in Central Louisiana.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <motion.div
+          className="grid grid-cols-1 lg:grid-cols-3 gap-8"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
+        >
           {services.map((service, idx) => (
             <motion.div
               key={idx}
-              whileHover={{ y: -10 }}
+              variants={itemVariants}
+              whileHover={{ y: -10, transition: { duration: 0.2 } }}
               className="group relative bg-zinc-900 brutalist-border rounded-xl overflow-hidden flex flex-col"
             >
               {/* Image Header */}
@@ -126,7 +162,7 @@ export function Services() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

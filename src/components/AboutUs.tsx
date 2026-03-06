@@ -1,14 +1,40 @@
 import { motion } from "motion/react";
 import { ShieldCheck, Target, Users } from "lucide-react";
 
+const containerVariants = {
+    hidden: { opacity: 0 },
+    animate: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2,
+            delayChildren: 0.1,
+        },
+    },
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+    },
+};
+
 export function AboutUs() {
     return (
         <section id="about" className="py-32 px-6 md:px-12 bg-zinc-950 relative border-t border-zinc-800">
             <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <motion.div
+                    className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="animate"
+                    viewport={{ once: true, margin: "-100px" }}
+                >
 
                     {/* Image Stack */}
-                    <div className="relative">
+                    <motion.div variants={itemVariants} className="relative">
                         <div className="aspect-[4/5] bg-zinc-900 brutalist-border rounded-xl overflow-hidden relative z-10">
                             <img
                                 src="https://www.cenlasigns.la/wp-content/uploads/2021/03/cropped-119776466_1739628646175759_8453419043403629989_o-270x270.jpg"
@@ -31,10 +57,10 @@ export function AboutUs() {
                         {/* Decorative Elements */}
                         <div className="absolute -top-6 -right-6 w-full h-full border-2 border-blue-500/20 rounded-xl z-0" />
                         <div className="absolute -bottom-6 -left-6 w-full h-full bg-blue-500/5 rounded-xl z-0" />
-                    </div>
+                    </motion.div>
 
                     {/* Content */}
-                    <div>
+                    <motion.div variants={itemVariants}>
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-sm brutalist-border bg-zinc-900/50 mb-6 transform -skew-x-6">
                             <span className="text-xs font-mono text-blue-500 uppercase tracking-widest transform skew-x-6">
                                 Our Story
@@ -59,7 +85,7 @@ export function AboutUs() {
                         </div>
 
                         {/* Core Values */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 rounded-sm bg-blue-500/10 flex items-center justify-center shrink-0 border border-blue-500/20 transform -skew-x-6">
                                     <ShieldCheck className="w-6 h-6 text-blue-500 transform skew-x-6" />
@@ -79,10 +105,10 @@ export function AboutUs() {
                                     <p className="text-sm text-zinc-500 leading-relaxed">We go the extra mile on every project we are given. No shortcuts, ever.</p>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
 
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
             </div>
         </section>
     );
