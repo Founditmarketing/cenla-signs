@@ -42,7 +42,7 @@ const services = [
       "Custom Apparel",
     ],
     image:
-      "https://www.cenlasigns.la/wp-content/uploads/2025/06/cenla_signs_about_us-scaled.jpg",
+      "https://www.cenlasigns.la/wp-content/uploads/2024/06/447729158_427607760166590_5627565360608040289_n.jpg",
   },
 ];
 

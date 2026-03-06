@@ -40,7 +40,7 @@ export function TestimonialMarquee() {
                 {[...reviews, ...reviews, ...reviews].map((review, idx) => (
                     <div
                         key={idx}
-                        className="w-[400px] bg-zinc-900 brutalist-border rounded-xl p-8 shrink-0 flex flex-col hover:border-blue-500 transition-colors"
+                        className="w-[300px] sm:w-[350px] md:w-[400px] bg-zinc-900 brutalist-border rounded-xl p-8 shrink-0 flex flex-col hover:border-blue-500 transition-colors"
                     >
                         <div className="flex gap-1 mb-6">
                             {[1, 2, 3, 4, 5].map((star) => (

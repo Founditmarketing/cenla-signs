@@ -35,7 +35,7 @@ const projects = [
     title: "Cenla Signs HQ",
     client: "In-House",
     image:
-      "https://www.cenlasigns.la/wp-content/uploads/2025/06/cenla_signs_about_us-scaled.jpg",
+      "https://www.cenlasigns.la/wp-content/uploads/2024/06/439021372_960991652694863_4906943528151191710_n.jpg",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const projects = [
     title: "Custom Fleet Graphic",
     client: "Local Business",
     image:
-      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=1964&auto=format&fit=crop",
+      "https://www.cenlasigns.la/wp-content/uploads/2024/06/421533526_900043955456300_2190709485602032226_n.jpg",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const projects = [
     title: "Architectural Signage",
     client: "Commercial",
     image:
-      "https://images.unsplash.com/photo-1563298723-dcfebaa392e3?q=80&w=2067&auto=format&fit=crop",
+      "https://www.cenlasigns.la/wp-content/uploads/2024/11/E052984E-9142-4A48-B2AF-9828E4BCA61D.jpeg",
   },
 ];
 
